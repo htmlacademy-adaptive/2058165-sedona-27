@@ -1,7 +1,7 @@
-# Личный проект «Седона» 
+# Личный проект «Седона»
 
-* Студент: [Natalie Raevskaya](https://up.htmlacademy.ru/adaptive/27/user/2058165).
-* Наставник: `Неизвестно`.
+- Студент: [Natalie Raevskaya](https://up.htmlacademy.ru/adaptive/27/user/2058165).
+- Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
