@@ -1,0 +1,31 @@
+.form {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.form__group {
+  margin-top: 24px;
+}
+
+.form__group-title {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.form__button {
+  min-width: 280px;
+  min-height: 58px;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 16px 49px;
+  margin-bottom: 3px;
+}
+
+.form__required-fields-text {
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: end;
+}

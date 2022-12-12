@@ -1,0 +1,34 @@
+.card {
+  padding-bottom: 25px;
+}
+
+.card__image {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.card__title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card__author {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.card__likes-button {
+  width: 23px;
+  height: 21px;
+  margin-right: 14px;
+}
+
+.card__likes-counter {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}

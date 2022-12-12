@@ -1,0 +1,37 @@
+.intro {
+  text-align: center;
+  min-height: 631px;
+  margin: 0 auto;
+}
+
+.intro__background {
+  background-image: url("../img/index/hero-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color:#193f54;
+  min-height: 389px;
+  margin-bottom: 32px;
+}
+
+.intro__text {
+  margin: 90px 18px 85px 18px;
+}
+
+.intro__wrapper {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.intro__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.intro__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
