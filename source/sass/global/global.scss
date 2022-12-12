@@ -22,9 +22,31 @@ img {
 
 // Reset
 
-* {padding: 0; margin: 0; border: 0;}
-input, button, text-area {font-family: inherit;}
-button {cursor: pointer;}
-ul li {list-style: none;}
-a, a:visited, a:hover {text-decoration: none;}
-nav {display: block;}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+nav {
+  display: block;
+}
