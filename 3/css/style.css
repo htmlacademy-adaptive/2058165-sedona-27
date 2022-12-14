@@ -37,7 +37,8 @@ img {
   border: 0;
 }
 
-input, button, text-area {
+input,
+button {
   font-family: inherit;
 }
 
@@ -49,7 +50,9 @@ ul li {
   list-style: none;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   text-decoration: none;
 }
 
@@ -86,8 +89,8 @@ nav {
 }
 
 .main-navigation__item {
-  background-color: #81B3D2;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  background-color: #81b3d2;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .main-navigation__link {
@@ -182,7 +185,7 @@ nav {
 }
 
 .button {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
@@ -213,11 +216,6 @@ nav {
   padding-bottom: 33px;
 }
 
-.copyright__text {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
 .servises-item {
   max-width: 320px;
   padding: 0 20px;
@@ -245,44 +243,49 @@ nav {
   text-transform: uppercase;
 }
 
-.index-item__wrap {
+.number-item__wrap {
   max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-.index-item__title {
+.number-item__title {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 11px;
 }
 
-.index-item__index-number {
+.number-item__number {
   display: block;
   margin-bottom: 17px;
 }
 
-.index-item--accent {
-  background-color: #81B3D2;
+.number-item--accent {
+  background-color: #81b3d2;
   color: #ffffff;
   padding: 37px 0;
 }
 
-.index-item--secondary {
-  background-color: #EEEEEE;
+.number-item--secondary {
+  background-color: #eeeeee;
   color: #000000;
   padding: 24px 0;
 }
 
-.index-item__description,
-.index-item__index-number {
+.number-item__description,
+.number-item__index {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
 }
 
-.image-item {
+.number-item__image {
   max-height: 260px;
+}
+
+.copyright__text {
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .intro-inner {
@@ -497,7 +500,11 @@ nav {
   margin-bottom: 56px;
 }
 
-.control__description {
+.radio__decsription {
+  font-weight: 700;
+}
+
+.checkbox__decsription {
   font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
