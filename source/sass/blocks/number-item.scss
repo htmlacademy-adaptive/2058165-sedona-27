@@ -1,35 +1,39 @@
-.index-item__wrap {
+.number-item__wrap {
   max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-.index-item__title {
+.number-item__title {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 11px;
 }
 
-.index-item__index-number {
+.number-item__number {
   display: block;
   margin-bottom: 17px;
 }
 
-.index-item--accent {
+.number-item--accent {
   background-color: $blue;
-  color: #ffffff;
+  color: $white;
   padding: 37px 0;
 }
 
-.index-item--secondary {
+.number-item--secondary {
   background-color: $grey;
-  color: #000000;
+  color: $black;
   padding: 24px 0;
 }
 
-.index-item__description,
-.index-item__index-number {
+.number-item__description,
+.number-item__index {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+.number-item__image {
+  max-height: 260px;
 }
