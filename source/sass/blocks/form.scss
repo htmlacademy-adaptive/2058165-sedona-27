@@ -4,7 +4,16 @@
 }
 
 .form__group {
-  margin-top: 24px;
+  margin: 24px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.form__fields-list,
+.form__radio-list,
+.form__checkbox-list {
+  padding: 0;
+  margin: 0;
 }
 
 .form__group-title {
@@ -12,6 +21,12 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.form__field-item,
+.form__radio-item,
+.form__checkbox-item {
+  list-style: none;
 }
 
 .form__button {

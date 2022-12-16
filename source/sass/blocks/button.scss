@@ -1,7 +1,12 @@
 .button {
   background-color: $blue;
   color: $white;
+  font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
   display: block;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 0;
 }

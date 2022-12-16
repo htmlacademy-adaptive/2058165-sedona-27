@@ -12,12 +12,14 @@
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .card__author {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  margin-top: 0;
   margin-bottom: 11px;
 }
 
@@ -25,6 +27,8 @@
   width: 23px;
   height: 21px;
   margin-right: 14px;
+  border: 0;
+  padding: 0;
 }
 
 .card__likes-counter {
