@@ -17,6 +17,10 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -29,35 +33,6 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-input,
-button {
-  font-family: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-ul li {
-  list-style: none;
-}
-
-a,
-a:visited,
-a:hover {
-  text-decoration: none;
-}
-
-nav {
-  display: block;
 }
 
 .page {
@@ -88,9 +63,15 @@ nav {
   margin: 0 auto;
 }
 
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+}
+
 .main-navigation__item {
   background-color: #81b3d2;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  list-style: none;
 }
 
 .main-navigation__link {
@@ -100,6 +81,7 @@ nav {
   text-align: center;
   display: block;
   padding: 17px 75px 12px;
+  text-decoration: none;
 }
 
 .intro {
@@ -131,6 +113,7 @@ nav {
 .intro__title {
   font-size: 18px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 35px;
 }
 
@@ -138,15 +121,25 @@ nav {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .advantages {
   text-align: center;
 }
 
+.advantages__list {
+  padding: 0;
+  margin: 0;
+}
+
 .advantages__image {
   margin: 0 auto;
   max-height: 260px;
+}
+
+.advantages__item {
+  list-style: none;
 }
 
 .search {
@@ -165,6 +158,7 @@ nav {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 25px;
 }
 
@@ -172,6 +166,7 @@ nav {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 32px;
 }
 
@@ -187,9 +182,14 @@ nav {
 .button {
   background-color: #81b3d2;
   color: #ffffff;
+  font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
   display: block;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 0;
 }
 
 .location__map {
@@ -214,6 +214,7 @@ nav {
   font-weight: 700;
   display: block;
   padding-bottom: 33px;
+  text-decoration: none;
 }
 
 .servises-item {
@@ -234,6 +235,7 @@ nav {
 .servises-item__title {
   font-size: 18px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -241,6 +243,7 @@ nav {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .number-item__wrap {
@@ -252,6 +255,7 @@ nav {
 .number-item__title {
   font-size: 18px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 11px;
 }
 
@@ -279,6 +283,10 @@ nav {
   text-transform: uppercase;
 }
 
+.number-item__description {
+  margin: 0;
+}
+
 .number-item__image {
   max-height: 260px;
 }
@@ -286,6 +294,14 @@ nav {
 .copyright__text {
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.social {
+  margin: 0;
+}
+
+.social__item {
+  list-style: none;
 }
 
 .intro-inner {
@@ -322,9 +338,15 @@ nav {
   margin-bottom: 17px;
 }
 
+.catalog__list {
+  list-style: none;
+  padding: 0;
+}
+
 .catalog__title {
   font-size: 21px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 35px;
 }
 
@@ -332,6 +354,7 @@ nav {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .catalog__item {
@@ -353,12 +376,14 @@ nav {
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .card__author {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  margin-top: 0;
   margin-bottom: 11px;
 }
 
@@ -366,6 +391,8 @@ nav {
   width: 23px;
   height: 21px;
   margin-right: 14px;
+  border: 0;
+  padding: 0;
 }
 
 .card__likes-counter {
@@ -387,6 +414,7 @@ nav {
 .presentation__title {
   font-size: 18px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 38px;
 }
 
@@ -394,6 +422,7 @@ nav {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 38px;
 }
 
@@ -419,6 +448,7 @@ nav {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 24px;
 }
 
@@ -426,6 +456,7 @@ nav {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .form {
@@ -434,7 +465,16 @@ nav {
 }
 
 .form__group {
-  margin-top: 24px;
+  margin: 24px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.form__fields-list,
+.form__radio-list,
+.form__checkbox-list {
+  padding: 0;
+  margin: 0;
 }
 
 .form__group-title {
@@ -442,6 +482,12 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.form__field-item,
+.form__radio-item,
+.form__checkbox-item {
+  list-style: none;
 }
 
 .form__button {
@@ -473,6 +519,7 @@ nav {
   background-color: #f2f2f2;
   padding: 16px;
   box-sizing: border-box;
+  border: 0;
 }
 
 .contact-field__label {
@@ -489,6 +536,7 @@ nav {
   background-color: #f2f2f2;
   padding: 16px;
   box-sizing: border-box;
+  border: 0;
 }
 
 .textarea__input {
@@ -498,6 +546,7 @@ nav {
   box-sizing: border-box;
   background-color: #f2f2f2;
   margin-bottom: 56px;
+  border: 0;
 }
 
 .radio__decsription {
