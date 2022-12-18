@@ -1,0 +1,16 @@
+.contact-field__label {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-left: 16px;
+}
+
+.contact-field__input {
+  display: block;
+  min-width: 280px;
+  min-height: 58px;
+  background-color: $light-grey;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 0;
+}

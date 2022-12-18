@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -40,15 +41,17 @@
       </section>
       <section class="catalog">
         <div class="catalog__wrapper">
-          <h1 class="catalog__title">Фото и видео</h1>
-          <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <div class="catalog__wrapper-intro">
+            <h1 class="catalog__title">Фото и видео</h1>
+            <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
           <ul class="catalog__list">
             <li class="catalog__item card">
               <a class="card__link" href="#">
                 <img class="card__image" src="img/catalog/catalog-1-mobile.jpg" width="280" height="280" alt="Дорога, уходящаая к горизонту, на фоне гор и заката.">
               </a>
               <h3 class="card__title">Неродные просторы</h3>
-              <p class="card__author">Автор фото:<span class="card__author-name">Борис</span></p>
+              <p class="card__author">Автор фото: <span class="card__author-name">Борис</span></p>
               <div class="card__likes-wrapper">
                 <button class="card__likes-button">
                   <span class="visually-hidden">Нравится</span>
@@ -62,7 +65,7 @@
                 <img class="card__image" src="img/catalog/catalog-2-mobile.jpg" width="280" height="280" alt="Местное растение - кактус Чолла, с маленькими желтыми цветами.">
               </a>
               <h3 class="card__title">Местная растительность</h3>
-              <p class="card__author">Автор фото:<span class="card__author-name">Сергей</span></p>
+              <p class="card__author">Автор фото: <span class="card__author-name">Сергей</span></p>
               <div class="card__likes-wrapper">
                 <button class="card__likes-button">
                   <span class="visually-hidden">Нравится</span>
@@ -76,7 +79,7 @@
                 <img class="card__image" src="img/catalog/catalog-3-mobile.jpg" width="280" height="280" alt="Горный серпантин, проходящий через густой лес">
               </a>
               <h3 class="card__title">Дорога на север</h3>
-              <p class="card__author">Автор фото:<span class="card__author-name">Петр</span></p>
+              <p class="card__author">Автор фото: <span class="card__author-name">Петр</span></p>
               <div class="card__likes-wrapper">
                 <button class="card__likes-button">
                   <span class="visually-hidden">Нравится</span>
@@ -90,7 +93,7 @@
                 <img class="card__image" src="img/catalog/catalog-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола - узкий перешеек на пропастью.">
               </a>
               <h3 class="card__title">Мост дьявола</h3>
-              <p class="card__author">Автор фото:<span class="card__author-name">Антон</span></p>
+              <p class="card__author">Автор фото: <span class="card__author-name">Антон</span></p>
               <div class="card__likes-wrapper">
                 <button class="card__likes-button">
                   <span class="visually-hidden">Нравится</span>
@@ -114,9 +117,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <a class="contacts__link" href="#">#visitSEDONA</a>
-        </div>
+        <a class="page-footer__link" href="#">#visitSEDONA</a>
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в ВКонтакте</span></a>

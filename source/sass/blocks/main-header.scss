@@ -1,0 +1,12 @@
+.main-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  color: $black;
+  box-sizing: border-box;
+}
+
+.main-header__logo {
+  margin: 0 auto;
+}

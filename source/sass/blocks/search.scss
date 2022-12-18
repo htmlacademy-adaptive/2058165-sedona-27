@@ -1,0 +1,36 @@
+.search {
+  margin-top: 38px;
+}
+
+.search__wrapper {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.search__description {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.search__button {
+  font-size: 21px;
+  font-weight: 700;
+  min-height: 54px;
+  padding: 16px 49px;
+  box-sizing: border-box;
+  margin-bottom: 49px;
+}

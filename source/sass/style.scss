@@ -1,1 +1,39 @@
-// Начните писать стили здесь
+// Global
+
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+
+// Index
+
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/search.scss";
+@import "./blocks/button.scss";
+@import "./blocks/location.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/servises-item.scss";
+@import "./blocks/number-item.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/social.scss";
+
+// Catalog
+
+@import "./blocks/intro-inner.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/presentation.scss";
+
+// Form
+
+@import "./blocks/feedback.scss";
+@import "./blocks/form.scss";
+@import "./blocks/text-field.scss";
+@import "./blocks/contact-field.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/checkbox.scss";
