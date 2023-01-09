@@ -3,7 +3,7 @@
   padding: 0 20px;
   margin: 0 auto;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0 auto;
     max-width: 190px;
@@ -80,7 +80,7 @@
     max-height: 256px;
     padding: 41px 33px;
     box-sizing: border-box;
-}
+  }
 }
 
 .number-item__picture {
@@ -106,7 +106,7 @@
 }
 
 .number-item--accent {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
@@ -116,12 +116,11 @@
   color: $black;
   padding: 24px 0;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 41px 33px;
     flex-basis: 256px;
     flex-grow: 1;
     min-height: 256px;
     box-sizing: border-box;
-    padding: 41px 33px;
   }
 }

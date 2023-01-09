@@ -7,13 +7,13 @@
   box-sizing: border-box;
   margin-bottom: 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: auto;
     min-height: 290px;
     margin-bottom: 64px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: auto;
     min-height: 290px;
     margin-bottom: 100px;
@@ -48,7 +48,7 @@
     }
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 95px;
 
     &::before,
@@ -72,7 +72,7 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 95px;
 
     &::before,

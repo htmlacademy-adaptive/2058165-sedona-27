@@ -123,7 +123,7 @@
   margin: 0;
   padding: 0;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
   }
@@ -133,7 +133,7 @@
   background-color: $blue;
   align-items: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 153px;
 
     &:nth-child(3) {
@@ -141,7 +141,7 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 240px;
   }
 }
@@ -159,7 +159,7 @@
   height: 55px;
   box-sizing: border-box;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     color: $black;
     background-color: $white;
     font-size: 14px;

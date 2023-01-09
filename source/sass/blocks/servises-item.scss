@@ -27,7 +27,7 @@
     background-image: url("../img/icons/icon-gift-mobile.svg");
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 155px 33px 60px;
     margin: 0;
     flex-basis: 256px;
@@ -59,7 +59,7 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 155px 33px 60px;
     min-width: 400px;
     min-height: 330px;
@@ -85,14 +85,14 @@
   margin-top: 25px;
   margin-bottom: 25px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
     text-align: center;
     min-width: 190px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     min-width: 300px;
     margin: 0 auto;
   }
