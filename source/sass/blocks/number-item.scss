@@ -40,10 +40,26 @@
 }
 
 .number-item__description {
+  position: relative;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+
+  &--underline {
+    @media (max-width: $mobile-width-only) {
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 280px;
+        height: 1px;
+        background: rgba(214, 214, 214, 1);
+        bottom: -24px;
+        left: 20px;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     br {
