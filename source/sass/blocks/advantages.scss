@@ -1,17 +1,16 @@
 .advantages {
+  min-width: 320px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .advantages__list {
+  list-style: none;
   padding: 0;
   margin: 0;
-}
 
-.advantages__image {
-  margin: 0 auto;
-  max-height: 260px;
-}
-
-.advantages__item {
-  list-style: none;
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

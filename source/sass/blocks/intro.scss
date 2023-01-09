@@ -2,33 +2,156 @@
   text-align: center;
   min-height: 631px;
   margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 723px;
+  }
 }
 
 .intro__background {
+  position: relative;
+  background-color: #193f54;
   background-image: url("../img/index/hero-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  background-color: #193f54;
-  min-height: 389px;
+  background-size: 100% 100%;
+  max-height: 389px;
   margin-bottom: 32px;
+
+  @media (max-width: $mobile-width-only) {
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 160px;
+      height: 57px;
+      bottom: 0;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      background-image: url("../img/intro-divider-right.svg");
+      right: 0;
+    }
+
+    &::before {
+      background-image: url("../img/intro-divider-left.svg");
+      left: 0;
+    }
+  }
+
+  @media(min-width: $tablet-width) {
+    min-height: 518px;
+    background-size: cover;
+    margin-bottom: 47px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 384px;
+      height: 57px;
+      background-repeat: no-repeat;
+      bottom: -1px;
+    }
+
+    &::after {
+      background-image: url("../img/intro-divider-right-tablet.svg");
+      right: 0;
+    }
+
+    &::before {
+      background-image: url("../img/intro-divider-left-tablet.svg");
+      left: 0;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 59px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 600px;
+      height: 57px;
+      background-repeat: no-repeat;
+      bottom: -1px;
+    }
+
+    &::after {
+      background-image: url("../img/intro-divider-right-desktop.svg");
+      right: 0;
+    }
+
+    &::before {
+      background-image: url("../img/intro-divider-left-desktop.svg");
+      left: 0;
+    }
+  }
 }
 
 .intro__text {
   margin: 90px 18px 85px 18px;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 77px;
+  }
 }
 
 .intro__wrapper {
+  position: relative;
   max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 160px;
+      height: 37px;
+      bottom: -80px;
+    }
+
+    &::before {
+      background-image: url("../img/advantages-divider-left.svg");
+      left: 0;
+    }
+
+    &::after {
+      background-image: url("../img/advantages-divider-right.svg");
+      right: 0;
+    }
+  }
+
+  @media(min-width: $tablet-width) {
+    max-width: 520px;
+    padding: 0;
+  }
+
+  @media(min-width: $desktop-width) {
+    max-width: 484px;
+  }
 }
 
 .intro__title {
   font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 35px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .intro__description {
@@ -36,4 +159,9 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 55px;
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }

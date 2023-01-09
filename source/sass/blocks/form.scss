@@ -1,12 +1,70 @@
 .form {
   max-width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    min-width: 648px;
+    flex-wrap: wrap;
+    column-gap: 70px;
+    justify-content: space-between;
+    row-gap: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    min-width: 960px;
+    flex-wrap: wrap;
+    column-gap: 128px;
+    justify-content: space-between;
+    row-gap: 48px;
+  }
 }
 
 .form__group {
   margin: 24px 0 0;
   padding: 0;
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.form__radio-list,
+.form__checkbox-list,
+.form__textarea {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__textarea {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form__fields-list,
@@ -21,6 +79,11 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 28px;
+  }
 }
 
 .form__field-item,
@@ -36,6 +99,24 @@
   line-height: 26px;
   padding: 16px 49px;
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+}
+
+.form__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
 }
 
 .form__required-fields-text {
@@ -43,4 +124,9 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 23px;
+  }
 }

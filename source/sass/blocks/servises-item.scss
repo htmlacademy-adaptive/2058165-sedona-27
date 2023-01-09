@@ -1,7 +1,80 @@
 .servises-item {
+  position: relative;
   max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 40px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--house::before {
+    background-image: url("../img/icons/icon-house-mobile.svg");
+  }
+
+  &--food::before {
+    background-image: url("../img/icons/icon-burger-mobile.svg");
+  }
+
+  &--gift::before {
+    background-image: url("../img/icons/icon-gift-mobile.svg");
+  }
+
+  @media(min-width: $tablet-width) {
+    padding: 155px 33px 60px;
+    margin: 0;
+    flex-basis: 256px;
+    flex-grow: 1;
+    min-height: 331px;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 93px;
+      width: 70px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &--house::before {
+      background-image: url("../img/icons/icon-house-tablet.svg");
+    }
+
+    &--food::before {
+      background-image: url("../img/icons/icon-burger-tablet.svg");
+    }
+
+    &--gift::before {
+      background-image: url("../img/icons/icon-gift-tablet.svg");
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 155px 33px 60px;
+    min-width: 400px;
+    min-height: 330px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 165px;
+      width: 70px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
 }
 
 .servises-item__wrap {
@@ -11,13 +84,31 @@
   padding-top: 8px;
   margin-top: 25px;
   margin-bottom: 25px;
+
+  @media(min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-width: 190px;
+  }
+
+  @media(min-width: $desktop-width) {
+    min-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .servises-item__title {
+  position: relative;
   font-size: 18px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .servises-item__description {
@@ -25,4 +116,10 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }

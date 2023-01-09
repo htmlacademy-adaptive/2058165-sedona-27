@@ -2,6 +2,12 @@
   max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
+
+  @media(min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 190px;
+  }
 }
 
 .number-item__title {
@@ -9,36 +15,113 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    max-width: 190px;
+    margin: 0 auto;
+  }
 }
 
-.number-item__number {
+.number-item__index {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-bottom: 25px;
+    margin: 0;
+  }
 }
 
-.number-item--accent {
+.number-item__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+
+    .break {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: block;
+    }
+  }
+}
+
+.number-item__text {
   background-color: $blue;
   color: $white;
   padding: 37px 0;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 256px;
+    flex-grow: 1;
+    max-height: 256px;
+    padding: 41px 33px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 400px;
+    max-height: 256px;
+    padding: 41px 33px;
+    box-sizing: border-box;
+}
+}
+
+.number-item__picture {
+  max-height: 256px;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.number-item__image--left {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.number-item--accent {
+  @media(min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .number-item--secondary {
   background-color: $grey;
   color: $black;
   padding: 24px 0;
-}
 
-.number-item__description,
-.number-item__index {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
-.number-item__description {
-  margin: 0;
-}
-
-.number-item__image {
-  max-height: 260px;
+  @media(min-width: $tablet-width) {
+    padding: 41px 33px;
+    flex-basis: 256px;
+    flex-grow: 1;
+    min-height: 256px;
+    box-sizing: border-box;
+    padding: 41px 33px;
+  }
 }

@@ -1,12 +1,16 @@
 .main-header {
+  height: 56px;
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: $white;
   color: $black;
-  box-sizing: border-box;
 }
 
 .main-header__logo {
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
