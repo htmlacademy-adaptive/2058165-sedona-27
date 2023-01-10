@@ -11,6 +11,24 @@
   min-height: 58px;
   background-color: $light-grey;
   padding: 16px;
+  margin-bottom: 16px;
   box-sizing: border-box;
-  border: 0;
+  border: none;
+
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    background-color: $white;
+    outline: 4px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 402px;
+  }
 }

@@ -6,4 +6,28 @@
   background-color: $light-grey;
   margin-bottom: 56px;
   border: 0;
+
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    background-color: $white;
+    outline: 4px solid #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+  }
+}
+
+.textarea__label {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
