@@ -4,6 +4,28 @@
   box-sizing: border-box;
   padding: 24px 0;
 
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+      left: -20px;
+      top: 0;
+    }
+
+    &:last-child::after {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+      left: -20px;
+      bottom: -5px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 50%;
     min-height: 347px;
@@ -88,6 +110,26 @@
   margin-right: 14px;
   border: 0;
   padding: 0;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 9px;
+    background-color: transparent;
+  }
+}
+
+.card__likes-icon {
+  @media (max-width: $mobile-width-only) {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: $white;
+  }
 }
 
 .card__likes-wrapper {

@@ -1,9 +1,9 @@
 .social {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
-  min-width: 156px;
+  width: 156px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -16,6 +16,7 @@
 }
 
 .social__link {
+  position: relative;
   width: 48px;
   height: 48px;
   background-color: $blue;
@@ -23,21 +24,35 @@
   padding: 15px 12px;
   box-sizing: border-box;
 
-  &--vkontakte {
-    background-image: url("../img/icons/icon-vk.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &:hover {
+    background-color: #669ec0;
   }
 
-  &--telegram {
-    background-image: url("../img/icons/icon-tg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.social__icon {
+  position: absolute;
+  fill: $white;
+
+  &--vk {
+    top: 17px;
+    right: 12px;
+  }
+
+  &--tg {
+    top: 15px;
+    right: 13px;
   }
 
   &--youtube {
-    background-image: url("../img/icons/icon-youtube.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    top: 17px;
+    right: 14px;
   }
+}
+
+.social__link:active .social__icon {
+  fill: rgba(255, 255, 255, 0.3);
 }
