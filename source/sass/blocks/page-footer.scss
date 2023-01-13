@@ -36,6 +36,14 @@
   padding-bottom: 33px;
   text-decoration: none;
 
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #766357;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     display: block;

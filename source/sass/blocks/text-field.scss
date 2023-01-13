@@ -10,7 +10,6 @@
   min-height: 58px;
   background-color: $light-grey;
   padding: 16px;
-  margin-bottom: 16px;
   box-sizing: border-box;
   border: none;
 
@@ -24,7 +23,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 16px;
+    min-width: 280px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

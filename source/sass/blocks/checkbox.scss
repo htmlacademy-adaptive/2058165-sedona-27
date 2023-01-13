@@ -10,28 +10,22 @@
 .checkbox__label {
   position: relative;
   display: block;
-  margin-bottom: 16px;
   min-height: 46px;
   box-sizing: border-box;
   padding: 10px 0 10px 62px;
 
-  &:hover {
-    .checkbox__mark {
-      background-color: #e5e5e5;
-    }
-  }
-
-  &:active {
-    .checkbox__mark {
-      background-color: #d5d5d5;
-    }
-  }
-
   @media (min-width: $desktop-width) {
-
     min-height: 46px;
     margin: 0 0;
   }
+}
+
+.checkbox__label:hover .checkbox__mark {
+  background-color: #e5e5e5;
+}
+
+.checkbox__label:active .checkbox__mark {
+  background-color: #d5d5d5;
 }
 
 .checkbox__input:checked + .checkbox__mark::before {
