@@ -63,7 +63,7 @@
         height: 1px;
         background: rgba(214, 214, 214, 1);
         bottom: -24px;
-        left: 20px;
+        left: 0;
       }
     }
   }
@@ -107,7 +107,7 @@
   padding: 37px 0;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 256px;
+    flex-basis: 33.33%;
     flex-grow: 1;
     max-height: 256px;
     padding: 41px 33px;
@@ -147,6 +147,7 @@
 .number-item--accent {
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 100%;
   }
 }
 

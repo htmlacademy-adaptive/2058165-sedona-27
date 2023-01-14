@@ -36,7 +36,11 @@
       <section class="intro-inner">
         <div class="intro-inner__wrapper">
           <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-          <img class="intro-inner__text" src="img/catalog/intro-text-mobile.svg" width="229" height="39" alt="SEDONA.">
+          <picture>
+            <source media="(min-width: 1200px)" width="460" height="80" srcset="img/catalog/intro-inner-text-desktop.svg">
+            <source media="(min-width: 768px)" width="457" height="77" srcset="img/catalog/intro-inner-text-tablet.svg">
+            <img class="intro-inner__text" src="img/catalog/intro-text-mobile.svg" width="229" height="39" alt="SEDONA.">
+          </picture>
         </div>
       </section>
       <section class="catalog">
@@ -47,8 +51,12 @@
           </div>
           <ul class="catalog__list">
             <li class="catalog__item card card--huge">
-              <a class="card__link" href="#">
-                <img class="card__image card__image--huge" src="img/catalog/catalog-1-mobile.jpg" width="280" height="280" alt="Дорога, уходящаая к горизонту, на фоне гор и заката.">
+              <a class="card__link" href="img/catalog/gallery-1-mobile.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" width="1200" height="400" srcset="img/catalog/gallery-1-desktop.jpg 1x, img/catalog/gallery-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="400" height="267" srcset="img/catalog/gallery-1-tablet.jpg 1x, img/catalog/gallery-1-tablet.jpg 2x">
+                  <img class="card__image card__image--huge" src="img/catalog/gallery-1-mobile.jpg" width="280" height="280" alt="Дорога, уходящаая к горизонту, на фоне гор и заката.">
+                </picture>
               </a>
               <div class="card__info">
                 <div class="card__author-wrapper">
@@ -65,8 +73,12 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <a class="card__link" href="#">
-                <img class="card__image" src="img/catalog/catalog-2-mobile.jpg" width="280" height="280" alt="Местное растение - кактус Чолла, с маленькими желтыми цветами.">
+              <a class="card__link" href="img/catalog/gallery-2-mobile.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" width="400" height="267" srcset="img/catalog/gallery-2-desktop.jpg 1x, img/catalog/gallery-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="324" height="267" srcset="img/catalog/gallery-2-tablet.jpg 1x, img/catalog/gallery-2-tablet.jpg 2x">
+                  <img class="card__image" src="img/catalog/gallery-2-mobile.jpg" width="280" height="280" alt="Местное растение - кактус Чолла, с маленькими желтыми цветами.">
+                </picture>
               </a>
               <div class="card__info">
                 <div class="card__author-wrapper">
@@ -83,8 +95,12 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <a class="card__link" href="#">
-                <img class="card__image" src="img/catalog/catalog-3-mobile.jpg" width="280" height="280" alt="Горный серпантин, проходящий через густой лес">
+              <a class="card__link" href="img/catalog/gallery-3-mobile.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" width="400" height="267" srcset="img/catalog/gallery-3-desktop.jpg 1x, img/catalog/gallery-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="324" height="267" srcset="img/catalog/gallery-3-tablet.jpg 1x, img/catalog/gallery-3-tablet.jpg 2x">
+                  <img class="card__image" src="img/catalog/gallery-3-mobile.jpg" width="280" height="280" alt="Горный серпантин, проходящий через густой лес.">
+                </picture>
               </a>
               <div class="card__info">
                 <div class="card__author-wrapper">
@@ -101,8 +117,12 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <a class="card__link" href="#">
-                <img class="card__image" src="img/catalog/catalog-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола - узкий перешеек на пропастью.">
+              <a class="card__link" href="img/catalog/gallery-4-mobile.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" width="400" height="267" srcset="img/catalog/gallery-4-desktop.jpg 1x, img/catalog/gallery-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="324" height="267" srcset="img/catalog/gallery-4-tablet.jpg 1x, img/catalog/gallery-4-tablet.jpg 2x">
+                  <img class="card__image" src="img/catalog/gallery-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола - узкий перешеек на пропастью.">
+                </picture>
               </a>
               <div class="card__info">
                 <div class="card__author-wrapper">
