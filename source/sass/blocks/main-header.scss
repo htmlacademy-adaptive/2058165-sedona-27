@@ -13,4 +13,8 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    z-index: 11;
+  }
 }

@@ -9,23 +9,22 @@
     position: absolute;
     content: "";
     background-color: #e6e6e6;
-    width: 57px;
-    height: 57px;
-    top: 22px;
+    width: 58px;
+    height: 58px;
+    top: 21px;
     right: 0;
-    border-radius: 2px;
   }
 
   &--phone::after {
     background-image: url("../img/icons/phone-icon.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
   }
 
   &--email::after {
     background-image: url("../img/icons/mail-icon.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
   }
 }
 

@@ -38,6 +38,10 @@
   left: 13px;
 }
 
+.checkbox__input:checked + .checkbox__mark:active::before {
+  opacity: 0.3;
+}
+
 .checkbox__decsription {
   font-weight: 700;
 }
