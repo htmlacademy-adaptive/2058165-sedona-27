@@ -1,0 +1,129 @@
+.modal__window {
+  position: relative;
+  max-width: 320px;
+  margin: auto;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &--failure {
+    padding: 45px 41px 35px;
+    height: 280px;
+    box-sizing: border-box;
+  }
+
+  &--success {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--failure {
+      max-width: 400px;
+      height: 347px;
+      padding: 50px 47px 49px;
+      box-sizing: border-box;
+    }
+
+    &--success {
+      min-width: 640px;
+    }
+  }
+}
+
+.modal__text-wrapper {
+  min-height: 225px;
+  padding: 44px 37px 34px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 201px;
+  }
+}
+
+.modal__title {
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+  &--failure {
+    margin-bottom: 33px;
+    max-width: 237px;
+  }
+
+  &--success {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+  &--failure {
+    margin-bottom: 28px;
+    max-width: 237px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--failure {
+      max-width: 307px;
+      margin: 0;
+      margin-bottom: 41px;
+    }
+
+    &--success {
+      max-width: 444px;
+    }
+  }
+}
+
+.modal__button {
+  padding: 18px 63px 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  box-sizing: border-box;
+  height: 58px;
+  margin: 0 auto;
+
+  &--failure {
+    width: 180px;
+  }
+
+  &--success {
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--failure {
+      width: 272px;
+      font-size: 21px;
+    }
+
+    &--success {
+      width: 458px;
+    }
+  }
+}
+
+.modal__button-wrapper {
+  background-color: #f2f2f2;
+  min-width: 320px;
+  min-height: 98px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 146px;
+    padding: 44px 91px;
+  }
+}

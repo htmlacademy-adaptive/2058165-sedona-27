@@ -30,8 +30,98 @@
   padding: 0;
   border: 0;
 
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 1px;
+      left: -20px;
+      top: -65px;
+      background-color: #e5e5e5;
+    }
+
+    &--checkbox::before {
+      top: -89px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
+
+    &--radio::before,
+    &--radio::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &--radio::before {
+      top: -40px;
+      left: 0;
+    }
+
+    &--radio::after {
+      top: -40px;
+      right: 0;
+    }
+
+    &--checkbox::before,
+    &--checkbox::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &--checkbox::before {
+      top: -57px;
+      left: 0;
+    }
+
+    &--checkbox::after {
+      top: -57px;
+      right: 0;
+    }
+
+    &--textarea::before,
+    &--textarea::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &--textarea::before {
+      top: -40px;
+      left: 0;
+    }
+
+    &--textarea::after {
+      top: -40px;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--radio::before,
+    &--radio::after {
+      width: 280px;
+    }
+
+    &--checkbox::before,
+    &--checkbox::after {
+      width: 280px;
+    }
+
+    &--textarea::before,
+    &--textarea::after {
+      width: 280px;
+    }
   }
 }
 
@@ -156,101 +246,18 @@
 }
 
 .form__group-title {
+  position: relative;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0 auto;
   margin-bottom: 20px;
-
-  @media (max-width: $mobile-width-only) {
-    &::before {
-      position: absolute;
-      content: "";
-      width: 320px;
-      height: 1px;
-      left: -20px;
-      top: -24px;
-      background-color: #e5e5e5;
-    }
-  }
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-bottom: 28px;
     padding: 0;
-
-    &--radio::before,
-    &--radio::after {
-      position: absolute;
-      content: "";
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
-    }
-
-    &--radio::before {
-      top: 12px;
-      left: 0;
-    }
-
-    &--radio::after {
-      top: 12px;
-      right: 0;
-    }
-
-    &--checkbox::before,
-    &--checkbox::after {
-      position: absolute;
-      content: "";
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
-    }
-
-    &--checkbox::before {
-      top: 26px;
-      left: 0;
-    }
-
-    &--checkbox::after {
-      top: 26px;
-      right: 0;
-    }
-
-    &--textarea::before,
-    &--textarea::after {
-      position: absolute;
-      content: "";
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
-    }
-
-    &--textarea::before {
-      top: 12px;
-      left: 0;
-    }
-
-    &--textarea::after {
-      top: 12px;
-      right: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--radio::before,
-    &--radio::after {
-      width: 280px;
-    }
-
-    &--checkbox::before,
-    &--checkbox::after {
-      width: 280px;
-    }
-
-    &--textarea::before,
-    &--textarea::after {
-      width: 280px;
-    }
   }
 }
 
@@ -259,7 +266,7 @@
   min-height: 58px;
   font-size: 21px;
   line-height: 26px;
-  padding: 16px 49px;
+  padding: 16px 47px;
   margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {

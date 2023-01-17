@@ -1,32 +1,35 @@
+.contact-field {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #e6e6e6;
+    width: 58px;
+    height: 58px;
+    top: 26px;
+    right: 0;
+  }
+
+  &--email-field::after {
+    background-image: url("../img/icons/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--phone-field::after {
+    background-image: url("../img/icons/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .contact-field__label {
   position: relative;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   padding-left: 16px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-color: #e6e6e6;
-    width: 57px;
-    height: 57px;
-    top: 22px;
-    right: 0;
-    border-radius: 2px;
-  }
-
-  &--phone::after {
-    background-image: url("../img/icons/phone-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
-  &--email::after {
-    background-image: url("../img/icons/mail-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
 }
 
 .contact-field__input {
