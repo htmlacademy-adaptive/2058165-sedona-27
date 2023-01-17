@@ -49,4 +49,13 @@
 .intro-inner__text {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 80px;
+  }
 }
