@@ -10,7 +10,7 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.png" alt="Логотип городка Седона." width="185" height="96">
       </a>
-
+<!-- удаление/добавление класса main-navigation--opened закрывает/открывает мобильное меню -->
       <nav class="main-navigation main-navigation--opened main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -34,7 +34,7 @@
       </nav>
     </header>
     <main class="main-inner">
-      <section class="intro-inner">
+      <section class="intro-inner intro-inner--form">
         <div class="intro-inner__wrapper">
           <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
           <svg class="intro-inner__text" width="229" height="39"  aria-hidden="true" focusable="false" fill="currentColor" role="img" aria-label="Sedona.">
@@ -50,7 +50,7 @@
           </div>
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="form__group form__group--name">
-              <legend class="form__group-title">Представьтесь:</legend>
+              <legend class="form__group-title form__group-title--name">Представьтесь:</legend>
               <ul class="form__fields-list form__fields-list--name">
                 <li class="form__field-item text-field">
                   <label class="text-field__label">ИМЯ*:
@@ -70,7 +70,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__group form__group--contacts">
-              <legend class="form__group-title">Контактная информация:</legend>
+              <legend class="form__group-title form__group-title--contacts">Контактная информация:</legend>
               <ul class="form__fields-list form__fields-list--contacts">
                 <li class="form__field-item contact-field contact-field--phone-field">
                   <label class="contact-field__label contact-field__label--phone">Контактный телефон*:
@@ -120,21 +120,21 @@
                     <span class="checkbox__decsription">Мост Дьявола</span>
                   </label>
                 </li>
-                <li class="form__checkbox-item checkbox">
+                <li class="form__checkbox-item checkbox checkbox--bell">
                   <label class=" checkbox__label">
                     <input class="checkbox__input visually-hidden" type="checkbox" name="mountain-bell" value="" checked>
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__decsription">Гора-Колокол</span>
                   </label>
                 </li>
-                <li class="form__checkbox-item checkbox">
+                <li class="form__checkbox-item checkbox checkbox--park">
                   <label class=" checkbox__label">
                     <input class="checkbox__input visually-hidden" type="checkbox" name="slide-park" value="slide-park" checked>
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__decsription">Слайд-парк</span>
                   </label>
                 </li>
-                <li class="form__checkbox-item checkbox">
+                <li class="form__checkbox-item checkbox checkbox--rocks">
                   <label class=" checkbox__label">
                     <input class="checkbox__input visually-hidden" type="checkbox" name="red-rocks" value="red-rocks">
                     <span class="checkbox__mark"></span>
@@ -159,9 +159,9 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper">
-        <a class="page-footer__link" href="#">#visitSEDONA</a>
+        <a class="page-footer__link page-footer__link--inner" href="#">#visitSEDONA</a>
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
@@ -190,14 +190,14 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Сайт HTML Academy</span>
             <strong class="copyright__text">Разработано</strong>
-            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" role="img" aria-label="Логотип HTML Academy.">
+            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 50 50" fill="currentColor" role="img" aria-label="Логотип HTML Academy.">
               <use xlink:href="./img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-
+<!-- удаление/добавление класса page__modal-container-failure--close открывает/закрывает модальное окно с ошибкой -->
     <div class="page__modal-container-failure page__modal-container-failure--close modal">
       <div class="modal__window modal__window--failure">
         <h2 class="modal__title modal__title--failure">Что-то пошло не так!</h2>
@@ -205,11 +205,11 @@
         <button class="modal__button modal__button--failure button" type="button">Ок</button>
       </div>
     </div>
-
+<!-- удаление/добавление класса page__modal-container-success--close открывает/закрывает модальное окно без ошибки -->
     <div class="page__modal-container-success page__modal-container-success--close modal">
       <div class="modal__window modal__window--success">
         <div class="modal__text-wrapper">
-          <h2 class="modal__title modal__title--success">Ваш отзыв отправлен</h2>
+          <h2 class="modal__title modal__title--success">Ваш отзыв отправлен!</h2>
           <p class="modal__description modal__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="modal__button-wrapper">

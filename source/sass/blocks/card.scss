@@ -50,6 +50,33 @@
   }
 }
 
+.card__link {
+  display: block;
+  margin-top: 7px;
+
+  &--cactus,
+  &--road,
+  &--bridge {
+    margin-top: 1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 14px;
+
+    &--bridge {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+
+    &--bridge {
+      // margin-top: 0;
+    }
+  }
+}
+
 .card__image {
   display: block;
   margin-bottom: 15px;
@@ -71,7 +98,7 @@
     justify-content: space-between;
     min-height: 80px;
     box-sizing: border-box;
-    padding: 22px 20px 15px;
+    padding: 22px 20px 17px;
     background-color: $light-grey;
   }
 
@@ -81,6 +108,11 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: $white;
+    padding-left: 25px;
+
+    &--huge {
+      bottom: -19px;
+    }
   }
 }
 
@@ -113,12 +145,14 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    margin-right: 9px;
+    padding-left: 7px;
     background-color: transparent;
   }
 }
 
 .card__likes-icon {
+  margin-left: 1px;
+
   @media (max-width: $mobile-width-only) {
     fill: rgba(0, 0, 0, 0.3);
   }
@@ -142,4 +176,5 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+  margin-left: -5px;
 }

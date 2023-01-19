@@ -10,7 +10,7 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.png" width="185" height="96" alt="Логотип городка Седона.">
       </a>
-
+<!-- удаление/добавление класса main-navigation--opened закрывает/открывает мобильное меню -->
       <nav class="main-navigation main-navigation--opened main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -60,7 +60,7 @@
                   <img class="card__image card__image--huge" src="img/catalog/gallery-1-mobile.jpg" srcset="img/catalog/gallery-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога, уходящаая к горизонту, на фоне гор и заката.">
                 </picture>
               </a>
-              <div class="card__info">
+              <div class="card__info card__info--huge">
                 <div class="card__author-wrapper">
                   <h3 class="card__title">Неродные просторы</h3>
                   <p class="card__author">Автор фото: <span class="card__author-name">Борис</span></p>
@@ -77,7 +77,7 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <a class="card__link" href="img/catalog/gallery-2-mobile.jpg">
+              <a class="card__link card__link--cactus" href="img/catalog/gallery-2-mobile.jpg">
                 <picture>
                   <source media="(min-width: 1200px)" width="400" height="267" srcset="img/catalog/gallery-2-desktop.jpg 1x, img/catalog/gallery-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" width="324" height="267" srcset="img/catalog/gallery-2-tablet.jpg 1x, img/catalog/gallery-2-tablet@2x.jpg 2x">
@@ -101,7 +101,7 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <a class="card__link" href="img/catalog/gallery-3-mobile.jpg">
+              <a class="card__link card__link--road" href="img/catalog/gallery-3-mobile.jpg">
                 <picture>
                   <source media="(min-width: 1200px)" width="400" height="267" srcset="img/catalog/gallery-3-desktop.jpg 1x, img/catalog/gallery-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" width="324" height="267" srcset="img/catalog/gallery-3-tablet.jpg 1x, img/catalog/gallery-3-tablet@2x.jpg 2x">
@@ -125,7 +125,7 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <a class="card__link" href="img/catalog/gallery-4-mobile.jpg">
+              <a class="card__link card__link--bridge" href="img/catalog/gallery-4-mobile.jpg">
                 <picture>
                   <source media="(min-width: 1200px)" width="400" height="267" srcset="img/catalog/gallery-4-desktop.jpg 1x, img/catalog/gallery-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" width="324" height="267" srcset="img/catalog/gallery-4-tablet.jpg 1x, img/catalog/gallery-4-tablet@2x.jpg 2x">
@@ -167,8 +167,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__link" href="#">#visitSEDONA</a>
-        <ul class="page-footer__social social">
+        <a class="page-footer__link page-footer__link--inner" href="#">#visitSEDONA</a>
+        <ul class="page-footer__social social social--inner">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
               <svg class="social__icon social__icon--vk" aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" fill="currentColor" role="img" aria-label="Логотип Вконтакте.">
@@ -196,7 +196,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Сайт HTML Academy</span>
             <strong class="copyright__text">Разработано</strong>
-            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" role="img" aria-label="Логотип HTML Academy.">
+            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 50 50" fill="currentColor" role="img" aria-label="Логотип HTML Academy.">
               <use xlink:href="./img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>

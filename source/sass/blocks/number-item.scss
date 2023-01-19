@@ -25,9 +25,15 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
-    padding-bottom: 20px;
-    max-width: 190px;
     margin: 0 auto;
+    margin-bottom: 14px;
+    max-width: 190px;
+  }
+}
+
+.number-item__title br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
@@ -40,8 +46,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-bottom: 25px;
-    margin: 0;
+    margin-bottom: 23px;
   }
 }
 
@@ -118,26 +123,32 @@
 .number-item__text {
   background-color: $blue;
   color: $white;
-  padding: 37px 0;
+  padding: 54px 0;
+  position: relative;
+  height: 210px;
+  box-sizing: border-box;
+
+  &--accent {
+    height: 191px;
+    padding: 37px 20px;
+  }
 
   @media (min-width: $tablet-width) {
     flex-basis: 33.33%;
     flex-grow: 1;
     height: 256px;
-    padding: 41px 33px;
+    padding: 53px 33px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 400px;
     max-height: 256px;
-    padding: 41px 33px;
     box-sizing: border-box;
   }
 }
 
 .number-item__picture {
-  max-height: 256px;
   display: block;
   margin: 0 auto;
 
@@ -168,13 +179,25 @@
 .number-item--secondary {
   background-color: $grey;
   color: $black;
-  padding: 24px 0;
+  padding: 25px 0;
 
   @media (min-width: $tablet-width) {
     padding: 41px 33px;
     flex-basis: 256px;
     flex-grow: 1;
-    min-height: 256px;
+    height: 256px;
     box-sizing: border-box;
+
+    &:nth-child(2n) {
+      padding: 53px 33px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 33px;
+
+    &:nth-child(2n) {
+      padding: 63px 33px;
+    }
   }
 }
