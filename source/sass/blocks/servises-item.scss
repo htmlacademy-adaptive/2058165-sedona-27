@@ -1,8 +1,10 @@
 .servises-item {
   position: relative;
   max-width: 320px;
+  min-height: 92px;
   padding: 0 20px;
   margin: 0 auto;
+  display: block;
 
   @media (min-width: $tablet-width) {
     padding: 155px 33px 60px;
@@ -26,6 +28,10 @@
   padding-top: 8px;
   margin-top: 25px;
   margin-bottom: 25px;
+
+  &--gift {
+    margin-bottom: 46px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -60,7 +66,7 @@
 
   &--house::before {
     background-image: url("../img/icons/icon-house-mobile.svg");
-    top: -5px;
+    top: -7px;
   }
 
   &--food::before {
@@ -74,6 +80,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 24px;
 
     &::before {
       content: "";
@@ -96,6 +103,8 @@
 
     &--gift::before {
       background-image: url("../img/icons/icon-gift-tablet.svg");
+      left: 63px;
+      top: -94px;
     }
   }
 

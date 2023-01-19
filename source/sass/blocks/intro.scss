@@ -1,8 +1,9 @@
 .intro {
   text-align: center;
-  min-height: 631px;
+  min-height: 611px;
   margin: 0 auto;
   box-sizing: border-box;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     min-height: 723px;
@@ -16,8 +17,8 @@
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, top;
   background-size: 100%;
-  min-height: 389px;
-  margin-bottom: 32px;
+  height: 389px;
+  margin-bottom: 33px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-divider-mobile.svg"), url("../img/hero-background-mobile@2x.jpg");
@@ -59,6 +60,19 @@
   padding: 0 20px;
   margin: 0 auto;
 
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/index/advantages-divider.svg");
+      width: 320px;
+      height: 37px;
+      bottom: -52px;
+      left: 0;
+      z-index: 11;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 520px;
     padding: 0;
@@ -73,12 +87,12 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 31px;
 
     br {
       display: none;
@@ -91,7 +105,7 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 44px;

@@ -1,9 +1,13 @@
-.checkbox-item {
+.checkbox {
   @media (min-width: $desktop-width) {
-    display: block;
-    width: auto;
-    min-height: 46px;
-    box-sizing: border-box;
+    &--bell,
+    &--park {
+      margin-left: 11px;
+    }
+
+    &--rocks {
+      margin-left: -6px;
+    }
   }
 }
 
@@ -16,7 +20,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 46px;
-    margin: 0 0;
+    margin: 0;
   }
 }
 

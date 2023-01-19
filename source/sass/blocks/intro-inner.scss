@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: bottom, bottom;
   background-size: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-divider-mobile.svg"), url("../img/hero-background-mobile@2x.jpg");
@@ -23,8 +23,13 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
-    min-height: 290px;
-    margin-bottom: 100px;
+    min-height: 301px;
+    margin-bottom: 99px;
+
+    &--form {
+      margin-bottom: 113px;
+    }
+
     background-image: url("../img/intro-divider-desktop.svg"), url("../img/hero-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {

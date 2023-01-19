@@ -26,9 +26,22 @@
 .form__group {
   display: inline-block;
   position: relative;
-  margin: 24px 0 24px;
+  margin: 27px 0 27px;
   padding: 0;
   border: 0;
+
+  &--radio {
+    margin: 20px 0 20px;
+  }
+
+  &--checkbox {
+    margin: 25px 0 22px;
+  }
+
+  &--textarea {
+    margin: 20px 0 20px;
+    margin-top: 26px;
+  }
 
   @media (max-width: $mobile-width-only) {
     &::before {
@@ -37,7 +50,7 @@
       width: 320px;
       height: 1px;
       left: -20px;
-      top: -65px;
+      top: -66px;
       background-color: #e5e5e5;
     }
 
@@ -49,6 +62,20 @@
   @media (min-width: $tablet-width) {
     margin: 0;
 
+    &--radio {
+      margin-top: 21px;
+      padding-top: 28px;
+    }
+
+    &--checkbox {
+      padding-top: 28px;
+      margin-bottom: -6px;
+    }
+
+    &--textarea {
+      padding-top: 27px;
+    }
+
     &--radio::before,
     &--radio::after {
       position: absolute;
@@ -59,12 +86,12 @@
     }
 
     &--radio::before {
-      top: -40px;
+      top: -15px;
       left: 0;
     }
 
     &--radio::after {
-      top: -40px;
+      top: -15px;
       right: 0;
     }
 
@@ -78,12 +105,12 @@
     }
 
     &--checkbox::before {
-      top: -57px;
+      top: -28px;
       left: 0;
     }
 
     &--checkbox::after {
-      top: -57px;
+      top: -28px;
       right: 0;
     }
 
@@ -97,12 +124,12 @@
     }
 
     &--textarea::before {
-      top: -40px;
+      top: -13px;
       left: 0;
     }
 
     &--textarea::after {
-      top: -40px;
+      top: -13px;
       right: 0;
     }
   }
@@ -205,7 +232,7 @@
     box-sizing: border-box;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 0 20px 0 44px;
+    padding: 0 0 0 44px;
   }
 }
 
@@ -251,13 +278,68 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding-top: 0;
+  margin-bottom: 15px;
   display: block;
+
+  &--radio,
+  &--checkbox {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 3px;
+  }
+
+  &--textarea {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    margin-bottom: 28px;
+    margin-bottom: 23px;
     padding: 0;
+
+    &--name {
+      padding-left: 42px;
+    }
+
+    &--contacts {
+      margin-left: -18px;
+    }
+
+    &--radio {
+      margin: 0 auto;
+    }
+
+    &--checkbox {
+      margin: 0 auto;
+    }
+
+    &--textarea {
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--name {
+      padding-left: 62px;
+    }
+
+    &--contacts {
+      padding-left: 48px;
+    }
+
+    &--radio {
+      padding-top: 7px;
+    }
+
+    &--checkbox {
+      padding-top: 8px;
+      width: 330px;
+    }
+
+    &--textarea {
+      padding-top: 15px;
+    }
   }
 }
 
@@ -271,6 +353,10 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
   }
 }
 
@@ -293,9 +379,12 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: end;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 172px;
     padding-top: 23px;
+    text-align: center;
   }
 }
