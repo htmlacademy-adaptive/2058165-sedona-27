@@ -65,16 +65,16 @@
   }
 
   &--house::before {
-    background-image: url("../img/icons/icon-house-mobile.svg");
+    background-image: url("../img/index/icon-house-mobile.svg");
     top: -7px;
   }
 
   &--food::before {
-    background-image: url("../img/icons/icon-burger-mobile.svg");
+    background-image: url("../img/index/icon-burger-mobile.svg");
   }
 
   &--gift::before {
-    background-image: url("../img/icons/icon-gift-mobile.svg");
+    background-image: url("../img/index/icon-gift-mobile.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -94,15 +94,15 @@
     }
 
     &--house::before {
-      background-image: url("../img/icons/icon-house-tablet.svg");
+      background-image: url("../img/index/icon-house-tablet.svg");
     }
 
     &--food::before {
-      background-image: url("../img/icons/icon-burger-tablet.svg");
+      background-image: url("../img/index/icon-burger-tablet.svg");
     }
 
     &--gift::before {
-      background-image: url("../img/icons/icon-gift-tablet.svg");
+      background-image: url("../img/index/icon-gift-tablet.svg");
       left: 63px;
       top: -94px;
     }
@@ -121,15 +121,15 @@
     }
 
     &--house::before {
-      background-image: url("../img/icons/icon-house-desktop.svg");
+      background-image: url("../img/index/icon-house-desktop.svg");
     }
 
     &--food::before {
-      background-image: url("../img/icons/icon-burger-desktop.svg");
+      background-image: url("../img/index/icon-burger-desktop.svg");
     }
 
     &--gift::before {
-      background-image: url("../img/icons/icon-gift-tablet.svg");
+      background-image: url("../img/index/icon-gift-tablet.svg");
     }
   }
 }
