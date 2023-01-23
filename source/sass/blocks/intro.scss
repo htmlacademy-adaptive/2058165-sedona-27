@@ -46,6 +46,8 @@
 
 .intro__text {
   margin: 90px 18px 85px 18px;
+  width: 282px;
+  height: 214px;
 
   @media (min-width: $tablet-width) {
     margin-top: 77px;
@@ -70,6 +72,7 @@
       bottom: -52px;
       left: 0;
       z-index: 11;
+      fill: $white;
     }
   }
 
