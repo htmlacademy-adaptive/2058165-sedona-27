@@ -46,6 +46,10 @@
   opacity: 0.3;
 }
 
+.checkbox__input:focus + .checkbox__mark {
+  background-color: #d5d5d5;
+}
+
 .checkbox__decsription {
   font-weight: 700;
 }
