@@ -2,6 +2,20 @@
   max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &--underline::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 280px;
+      height: 1px;
+      background: rgba(214, 214, 214, 1);
+      bottom: -24px;
+      left: 20px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -44,6 +58,10 @@
   display: block;
   margin-bottom: 15px;
 
+  &--secondary {
+    margin-bottom: 19px;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
     margin-bottom: 23px;
@@ -58,19 +76,8 @@
   text-transform: uppercase;
   margin: 0 auto;
 
-  &--underline {
-    @media (max-width: $mobile-width-only) {
-      &::after {
-        display: block;
-        position: absolute;
-        content: "";
-        width: 280px;
-        height: 1px;
-        background: rgba(214, 214, 214, 1);
-        bottom: -24px;
-        left: 0;
-      }
-    }
+  &--secondary {
+    margin-bottom: 5px;
   }
 
   @media (min-width: $tablet-width) {

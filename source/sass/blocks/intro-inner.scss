@@ -1,23 +1,48 @@
 .intro-inner {
+  position: relative;
   background-color: #193f54;
-  background-image: url("../img/intro-divider-mobile.svg"), url("../img/hero-background-mobile.jpg");
+  background-image: url("../img/hero-background-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: bottom, bottom;
+  background-position: bottom;
   background-size: 100%;
   margin-bottom: 37px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro-divider-mobile.svg"), url("../img/hero-background-mobile@2x.jpg");
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/intro-divider-mobile.svg");
+      background-repeat: no-repeat;
+      width: 320px;
+      height: 57px;
+      left: 0;
+      bottom: -1px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-background-mobile@2x.jpg");
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: auto;
     min-height: 290px;
     margin-bottom: 64px;
-    background-image: url("../img/intro-divider-tablet.svg"), url("../img/hero-background-tablet.jpg");
+    background-image: url("../img/hero-background-tablet.jpg");
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/intro-divider-tablet.svg");
+      background-repeat: no-repeat;
+      width: 768px;
+      height: 57px;
+      left: 0;
+      bottom: -1px;
+    }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-divider-tablet.svg"), url("../img/hero-background-tablet@2x.jpg");
+      background-image: url("../img/hero-background-tablet@2x.jpg");
     }
   }
 
@@ -25,22 +50,31 @@
     width: auto;
     min-height: 301px;
     margin-bottom: 99px;
+    background-image: url("../img/hero-background-desktop.jpg");
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/intro-divider-desktop.svg");
+      background-repeat: no-repeat;
+      width: 1200px;
+      height: 57px;
+      left: 0;
+      bottom: -1px;
+    }
 
     &--form {
       margin-bottom: 113px;
     }
 
-    background-image: url("../img/intro-divider-desktop.svg"), url("../img/hero-background-desktop.jpg");
-
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-divider-desktop.svg"), url("../img/hero-background-desktop@2x.jpg");
+      background-image: url("../img/hero-background-desktop@2x.jpg");
     }
   }
 }
 
 .intro-inner__wrapper {
   position: relative;
-  padding: 52px 0 67px;
 
   @media (min-width: $tablet-width) {
     padding-top: 95px;
