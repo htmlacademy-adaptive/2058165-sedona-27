@@ -4,10 +4,6 @@
   margin: 0 auto;
   box-sizing: border-box;
   background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    min-height: 723px;
-  }
 }
 
 .intro__background {
@@ -111,6 +107,6 @@
   margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 44px;
+    margin-bottom: 54px;
   }
 }
