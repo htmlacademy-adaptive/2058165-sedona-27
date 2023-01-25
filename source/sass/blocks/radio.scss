@@ -41,7 +41,7 @@
   left: 15px;
 }
 
-.radio__input:focus +.radio__mark {
+.radio__input:focus + .radio__mark {
   background-color: #d5d5d5;
 }
 
