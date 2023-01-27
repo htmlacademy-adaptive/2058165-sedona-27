@@ -43,7 +43,7 @@
     margin-top: 26px;
   }
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     &::before {
       position: absolute;
       content: "";
@@ -375,6 +375,7 @@
 }
 
 .form__required-fields-text {
+  color: $text-color;
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;

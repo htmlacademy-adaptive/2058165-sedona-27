@@ -15,9 +15,9 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo.png" alt="Логотип городка Седона." width="185" height="96">
+        <img class="main-header__logo-image" src="img/logo.svg" alt="Логотип городка Седона." width="185" height="96">
       </a>
-      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -42,8 +42,8 @@
     <main class="main-inner">
       <section class="intro-inner intro-inner--form">
         <div class="intro-inner__wrapper">
-          <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-          <svg class="intro-inner__text"  viewBox="0 0 229 39" aria-hidden="true" focusable="false" fill="currentColor" role="img" aria-label="Sedona.">
+          <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+          <svg class="intro-inner__text" aria-hidden="true" focusable="false" width="229" height="39" viewBox="0 0 229 39" fill="currentColor" role="img" aria-label="Sedona.">
             <use xlink:href="./img/gulp-sprite.svg#hero-text-inner"></use>
           </svg>
         </div>
@@ -51,7 +51,7 @@
       <section class="feedback">
         <div class="feedback__wrapper">
           <div class="feedback__wrapper-intro">
-            <h1 class="feedback__title">Оставьте свой отзыв</h1>
+            <h2 class="feedback__title">Оставьте свой отзыв</h2>
             <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
@@ -152,9 +152,9 @@
             <fieldset class="form__group form__group--textarea">
               <legend class="form__group-title form__group-title--textarea">Опишите свои эмоции:</legend>
               <div class="form__textarea textarea">
-                <label class="textarea__label">
-                  <textarea class="textarea__input" name="feedback" cols="30" rows="5">Опишите подробно все свои восторги </textarea>
-                </label>
+                <p class="textarea__text" for="feedback-text">
+                  <textarea class="textarea__input" id="feedback-text" name="feedback" cols="30" rows="5" placeholder="Опишите подробно все свои восторги">Опишите подробно все свои восторги </textarea>
+                </p>
               </div>
               <div class="form__button-wrapper">
                 <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>

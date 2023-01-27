@@ -7,6 +7,8 @@
 }
 
 .intro__background {
+  width: $mobile-width-only;
+  margin: 0 auto;
   position: relative;
   background-color: #193f54;
   background-image: url("../img/hero-background-mobile.jpg");
@@ -16,7 +18,7 @@
   height: 389px;
   margin-bottom: 33px;
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) {
     &::before {
       position: absolute;
       content: "";
@@ -34,6 +36,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin: 0 auto;
     min-height: 518px;
     margin-bottom: 47px;
     background-image: url("../img/hero-background-tablet.jpg");
@@ -55,6 +59,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
     margin-bottom: 59px;
     background-image: url("../img/hero-background-desktop.jpg");
 
@@ -90,11 +96,11 @@
 
 .intro__wrapper {
   position: relative;
-  max-width: 320px;
-  padding: 0 20px;
+  width: 320px;
+  // padding: 0 20px;
   margin: 0 auto;
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     &::after {
       position: absolute;
       content: "";
@@ -109,7 +115,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 520px;
+    width: 520px;
     padding: 0;
   }
 
@@ -136,13 +142,17 @@
 }
 
 .intro__description {
+  color: $text-color;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 45px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+    width: 520px;
+    padding: 0;
   }
 }

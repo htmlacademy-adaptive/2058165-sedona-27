@@ -1,4 +1,6 @@
 .intro-inner {
+  width: $mobile-width-only;
+  margin: 0 auto;
   position: relative;
   background-color: #193f54;
   background-image: url("../img/hero-background-mobile.jpg");
@@ -7,7 +9,7 @@
   background-size: 100%;
   margin-bottom: 37px;
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) {
     &::before {
       position: absolute;
       content: "";
@@ -25,7 +27,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: $tablet-width;
     min-height: 290px;
     margin-bottom: 64px;
     background-image: url("../img/hero-background-tablet.jpg");

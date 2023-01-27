@@ -37,13 +37,16 @@
 }
 
 .search__description {
+  width: 262px;
+  margin: 0 auto;
+  color: $text-color;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin-top: 0;
+
   margin-bottom: 32px;
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     br {
       display: none;
     }
@@ -62,6 +65,8 @@
 }
 
 .search__button {
+  width: 284px;
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -71,6 +76,7 @@
   margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
+    width: 458px;
     min-height: 58px;
     padding: 16px 115px;
     margin-bottom: 63px;

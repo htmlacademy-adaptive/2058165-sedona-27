@@ -9,26 +9,13 @@
   }
 }
 
-.presentation__wrapper {
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    max-width: 648px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-}
-
 .presentation__title {
   position: relative;
   font-size: 18px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 26px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -37,11 +24,13 @@
 }
 
 .presentation__description {
+  color: $text-color;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 38px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -58,32 +47,60 @@
   }
 }
 
-.presentation__video {
-  width: 280px;
-  height: 177px;
-  margin: 0 auto;
+.presentation__wrapper {
+  text-align: center;
+  display: flex;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 648px;
+    max-width: 648px;
     height: 500px;
-    margin-bottom: 40px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 800px;
-    height: 500px;
-    margin-bottom: 76px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 
-.presentation__video-image {
-  @media (min-width: $tablet-width) {
-    width: 648px;
-    height: 500px;
-  }
+.presentation__video {
+  // width: 280px;
+  // height: 177px;
+  // margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
 
-  @media (min-width: $desktop-width) {
-    width: 800px;
-    height: 500px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 648px;
+  //   height: 500px;
+  //   margin-bottom: 40px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   width: 800px;
+  //   height: 500px;
+  //   margin-bottom: 76px;
+  // }
+}
+
+.presentation__button {
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  background-color: transparent;
+  background-image: url("../img/catalog/play.svg");
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  border: none;
+}
+
+.presentation__video-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }

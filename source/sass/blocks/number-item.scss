@@ -1,10 +1,9 @@
 .number-item__wrap {
-  max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
   position: relative;
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     &--underline::after {
       display: block;
       position: absolute;
@@ -20,13 +19,13 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0 auto;
-    max-width: 190px;
+    width: 190px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0 auto;
-    max-width: 300px;
+    width: 300px;
   }
 }
 
@@ -46,7 +45,7 @@
 }
 
 .number-item__title br {
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     display: none;
   }
 }
@@ -60,6 +59,7 @@
 
   &--secondary {
     margin-bottom: 19px;
+    color: $text-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -70,7 +70,7 @@
 
 .number-item__description {
   position: relative;
-  max-width: 280px;
+  width: 280px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -78,6 +78,7 @@
 
   &--secondary {
     margin-bottom: 5px;
+    color: $text-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -85,7 +86,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 290px;
+    max-width: 330px;
+
+    &--one {
+      width: 400px;
+    }
+
+    &--two {
+      max-width: 430px;
+    }
   }
 }
 
@@ -93,10 +102,14 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .number-item__description--accent br {
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     display: none;
   }
 
@@ -109,12 +122,12 @@
   width: 237px;
 
   @media (min-width: $desktop-width) {
-    min-width: 300px;
+    min-width: 310px;
   }
 }
 
 .number-item__description--thirdline br {
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     display: none;
   }
 
@@ -142,7 +155,7 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 33.33%;
-    flex-grow: 1;
+    flex-shrink: 2;
     height: 256px;
     padding: 53px 33px;
     box-sizing: border-box;

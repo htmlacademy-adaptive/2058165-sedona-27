@@ -18,4 +18,9 @@
     background-color: rgba(84, 150, 189, 1);
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &:disabled {
+    background-color: $page-background;
+    color: $white;
+  }
 }
