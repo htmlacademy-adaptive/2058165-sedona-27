@@ -42,6 +42,16 @@
   margin-bottom: 16px;
   box-sizing: border-box;
   border: none;
+  color: $black;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: 700;
+  }
 
   &::after {
     position: absolute;

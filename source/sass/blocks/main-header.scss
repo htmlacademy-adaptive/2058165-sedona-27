@@ -1,10 +1,20 @@
 .main-header {
   min-height: 56px;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: $white;
   color: $black;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 }
 
 .main-header__logo {
@@ -12,11 +22,10 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
   width: 185px;
   height: 96px;
 
   @media (min-width: $tablet-width) {
-    z-index: 11;
+    z-index: 1;
   }
 }

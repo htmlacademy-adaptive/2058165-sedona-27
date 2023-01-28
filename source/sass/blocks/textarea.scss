@@ -1,11 +1,22 @@
 .textarea__input {
-  min-width: 280px;
-  min-height: 150px;
-  padding: 16px;
+  width: 280px;
+  height: 150px;
+  padding: 17px;
   box-sizing: border-box;
   background-color: $light-grey;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border: 0;
+  color: $black;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: 700;
+  }
 
   &:hover {
     background-color: rgba(229, 229, 229, 1);
@@ -27,7 +38,7 @@
   }
 }
 
-.textarea__label {
+.textarea__text {
   @media (min-width: $tablet-width) {
     margin: 0 auto;
   }

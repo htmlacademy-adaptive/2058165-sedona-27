@@ -1,7 +1,16 @@
 .location {
-  width: 100%;
+  width: $mobile-width-only;
+  display: block;
   height: 350px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .location__map {

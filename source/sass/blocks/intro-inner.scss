@@ -1,4 +1,6 @@
 .intro-inner {
+  width: $mobile-width-only;
+  margin: 0 auto;
   position: relative;
   background-color: #193f54;
   background-image: url("../img/hero-background-mobile.jpg");
@@ -7,7 +9,7 @@
   background-size: 100%;
   margin-bottom: 37px;
 
-  @media (max-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     &::before {
       position: absolute;
       content: "";
@@ -25,7 +27,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: $tablet-width;
     min-height: 290px;
     margin-bottom: 64px;
     background-image: url("../img/hero-background-tablet.jpg");
@@ -75,6 +77,8 @@
 
 .intro-inner__wrapper {
   position: relative;
+  height: 157px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding-top: 95px;
@@ -88,15 +92,17 @@
 .intro-inner__text {
   display: block;
   margin: 0 auto;
-  width: 282px;
-  height: 214px;
+  width: 229px;
+  padding-top: 52px;
 
   @media (min-width: $tablet-width) {
     width: 460px;
     height: 77px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     height: 80px;
+    width: 456px;
   }
 }
