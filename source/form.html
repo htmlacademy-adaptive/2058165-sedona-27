@@ -17,7 +17,7 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.svg" alt="Логотип городка Седона." width="185" height="96">
       </a>
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+      <nav class="main-navigation main-navigation--closed main-navigation--js">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -152,8 +152,8 @@
             <fieldset class="form__group form__group--textarea">
               <legend class="form__group-title form__group-title--textarea">Опишите свои эмоции:</legend>
               <div class="form__textarea textarea">
-                <p class="textarea__text" for="feedback-text">
-                  <textarea class="textarea__input" id="feedback-text" name="feedback" cols="30" rows="5" placeholder="Опишите подробно все свои восторги">Опишите подробно все свои восторги </textarea>
+                <p class="textarea__text">
+                  <textarea class="textarea__input" name="feedback" cols="30" rows="5" placeholder="Опишите подробно все свои восторги">Опишите подробно все свои восторги </textarea>
                 </p>
               </div>
               <div class="form__button-wrapper">
@@ -168,7 +168,7 @@
     <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper">
         <a class="page-footer__link page-footer__link--inner" href="#">#visitSEDONA</a>
-        <ul class="page-footer__social social">
+        <ul class="page-footer__social social social--form">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
               <svg class="social__icon social__icon--vk" aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" fill="currentColor" role="img" aria-label="Логотип Вконтакте.">
@@ -195,8 +195,8 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Сайт HTML Academy</span>
-            <strong class="copyright__text">Разработано</strong>
-            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 50 50" fill="currentColor" role="img" aria-label="Логотип HTML Academy.">
+            <strong class="copyright__text copyright__text--form">Разработано</strong>
+            <svg class="copyright__icon copyright__icon--form" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 27 34" fill="currentColor" role="img" aria-label="Логотип HTML Academy.">
               <use xlink:href="./img/gulp-sprite.svg#htmlacademy"></use>
             </svg>
           </a>

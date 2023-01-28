@@ -16,7 +16,7 @@
     padding: 36px 120px;
 
     &--form {
-      padding: 25px 120px;
+      padding: 35px 120px;
     }
   }
 }
@@ -71,5 +71,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 21px;
+    margin-top: -9px;
   }
 }

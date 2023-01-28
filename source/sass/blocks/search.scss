@@ -1,8 +1,8 @@
 .search {
-  margin-top: 32px;
+  margin-top: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 53px;
+    margin-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,12 +60,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 }
 
 .search__button {
-  width: 284px;
+  width: 282px;
   margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
@@ -79,6 +79,10 @@
     width: 458px;
     min-height: 58px;
     padding: 16px 115px;
-    margin-bottom: 63px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
   }
 }

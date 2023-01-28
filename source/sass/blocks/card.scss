@@ -12,7 +12,7 @@
       height: 1px;
       background-color: #e5e5e5;
       left: -20px;
-      top: 0;
+      top: 4px;
     }
 
     &:last-child::after {
@@ -22,7 +22,7 @@
       height: 1px;
       background-color: #e5e5e5;
       left: -20px;
-      bottom: -5px;
+      bottom: 0;
     }
   }
 
@@ -108,6 +108,10 @@
     box-sizing: border-box;
     padding: 22px 20px 17px;
     background-color: $light-grey;
+
+    &--dark {
+      background-color: #eaeaea;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -116,6 +120,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: $white;
+    padding: 22px 20px 17px;
     padding-left: 25px;
 
     &--huge {
@@ -130,6 +135,15 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -5px;
+
+    &--huge {
+      margin-left: -4px;
+      padding-top: 5px;
+    }
+  }
 }
 
 .card__author {
@@ -146,6 +160,12 @@
 
   @media (min-width: $desktop-width) {
     color: $white;
+    padding-top: 5px;
+
+    &--huge {
+      margin-left: -5px;
+      padding: 0;
+    }
   }
 }
 
@@ -158,7 +178,7 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    padding-left: 7px;
+    padding-left: 4px;
     background-color: transparent;
   }
 }
@@ -175,7 +195,7 @@
 
 .card__likes-wrapper {
   @media (min-width: $tablet-width) {
-    padding-top: 7px;
+    padding-top: 5px;
   }
 }
 

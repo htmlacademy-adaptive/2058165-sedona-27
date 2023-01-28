@@ -65,20 +65,24 @@
     width: 320px;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1;
   }
 
   .main-navigation--nojs .main-navigation__toggle {
     display: none;
   }
 
-  .main-navigation--nojs .main-navigation__item {
-    display: block;
-  }
-
   .main-navigation--nojs .main-navigation__wrapper {
     position: static;
-    padding-bottom: 56px;
+    margin-bottom: 56px;
+  }
+
+  .main-navigation--nojs + .main-header__logo {
+    top: 222px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
   }
 }
 

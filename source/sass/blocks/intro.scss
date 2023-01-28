@@ -18,7 +18,7 @@
   height: 389px;
   margin-bottom: 33px;
 
-  @media (min-width: $mobile-width-only) {
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     &::before {
       position: absolute;
       content: "";
@@ -39,7 +39,7 @@
     width: $tablet-width;
     margin: 0 auto;
     min-height: 518px;
-    margin-bottom: 47px;
+    margin-bottom: 48px;
     background-image: url("../img/hero-background-tablet.jpg");
 
     &::before {
@@ -118,10 +118,6 @@
     width: 520px;
     padding: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    max-width: 484px;
-  }
 }
 
 .intro__title {
@@ -129,6 +125,7 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 37px;
+  margin-left: -3px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -151,8 +148,12 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     width: 520px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
   }
 }

@@ -20,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     &--failure {
-      max-width: 400px;
+      width: 400px;
       height: 347px;
       padding: 50px 47px 49px;
       box-sizing: border-box;
@@ -66,6 +66,20 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 40px;
+
+    &--success {
+      margin-bottom: 25px;
+    }
+
+    &--failure {
+      margin-bottom: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--failure {
+      margin-bottom: 27px;
+    }
   }
 }
 
@@ -85,7 +99,7 @@
     &--failure {
       max-width: 307px;
       margin: 0;
-      margin-bottom: 41px;
+      margin-bottom: 45px;
     }
 
     &--success {
