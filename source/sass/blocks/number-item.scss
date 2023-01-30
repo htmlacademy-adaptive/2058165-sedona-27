@@ -148,21 +148,19 @@
 .number-item__text {
   background-color: $blue;
   color: $white;
-  padding: 54px 0;
+  padding: 55px 0 40px;
   position: relative;
-  height: 210px;
   box-sizing: border-box;
 
   &--accent {
-    height: 191px;
-    padding: 37px 20px;
+    height: 100%;
+    padding: 37px 20px 39px;
   }
 
   @media (min-width: $tablet-width) {
-    flex-basis: 33.33%;
-    flex-shrink: 2;
-    height: 256px;
-    padding: 53px 33px;
+    width: 33.33%;
+    height: 100%;
+    padding: 53px 33px 20px;
     box-sizing: border-box;
   }
 
@@ -209,19 +207,18 @@
   @media (min-width: $tablet-width) {
     padding: 41px 33px;
     width: 33.33%;
-    height: 256px;
     box-sizing: border-box;
 
     &:nth-child(2n) {
-      padding: 53px 33px;
+      padding: 52px 33px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 33px;
+    padding: 50px 33px;
 
     &:nth-child(2n) {
-      padding: 63px 33px;
+      padding: 62px 33px 30px;
     }
   }
 }
