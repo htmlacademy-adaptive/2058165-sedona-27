@@ -47,10 +47,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    padding-top: 19px;
   }
 }
 

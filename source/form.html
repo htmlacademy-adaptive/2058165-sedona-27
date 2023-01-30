@@ -14,10 +14,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo.svg" alt="Логотип городка Седона." width="185" height="96">
-      </a>
-      <nav class="main-navigation main-navigation--closed main-navigation--js">
+      <nav class="main-navigation main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -38,6 +35,9 @@
           </ul>
         </div>
       </nav>
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo.svg" alt="Логотип городка Седона." width="185" height="96">
+      </a>
     </header>
     <main class="main-inner">
       <section class="intro-inner intro-inner--form">
@@ -152,9 +152,10 @@
             <fieldset class="form__group form__group--textarea">
               <legend class="form__group-title form__group-title--textarea">Опишите свои эмоции:</legend>
               <div class="form__textarea textarea">
-                <p class="textarea__text">
+                <label class="textarea__label">
+                  <span class="visually-hidden">Поле для ввода отзыва.</span>
                   <textarea class="textarea__input" name="feedback" cols="30" rows="5" placeholder="Опишите подробно все свои восторги">Опишите подробно все свои восторги </textarea>
-                </p>
+                </label>
               </div>
               <div class="form__button-wrapper">
                 <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>

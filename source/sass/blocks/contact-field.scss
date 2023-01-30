@@ -35,10 +35,10 @@
 .contact-field__input {
   position: relative;
   display: block;
-  min-width: 280px;
+  width: 280px;
   min-height: 58px;
   background-color: $light-grey;
-  padding: 16px;
+  padding: 16px 70px 16px 16px;
   margin-bottom: 16px;
   box-sizing: border-box;
   border: none;
@@ -51,6 +51,7 @@
     color: rgba(0, 0, 0, 0.3);
     font-size: 18px;
     font-weight: 700;
+    padding-right: 70px;
   }
 
   &::after {

@@ -165,13 +165,13 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    &--name::after {
+    &--name::before {
       position: absolute;
       content: "";
       width: 1px;
       height: 338px;
       background-color: #dbdbdb;
-      bottom: -15px;
+      top: -55px;
       left: 324px;
     }
 
@@ -184,7 +184,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--name::after {
+    &--name::before {
       left: 493px;
     }
   }
@@ -210,7 +210,6 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     min-height: 80px;
-    flex-wrap: nowrap;
     padding: 0 10px 0 53px;
     column-gap: 28px;
     align-items: center;
@@ -238,7 +237,7 @@
     width: 100%;
     min-height: 108px;
     box-sizing: border-box;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 0 0 44px;
   }
@@ -307,7 +306,7 @@
   }
 
   &--textarea {
-    margin-bottom: 4px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -393,14 +392,16 @@
 
 .form__required-fields-text {
   color: $text-color;
-  font-size: 14px;
+
   line-height: 21px;
   text-transform: uppercase;
   text-align: end;
   margin: 0;
+  margin-left: 5px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    font-size: 14px;
     width: 172px;
     padding-top: 23px;
     text-align: center;
